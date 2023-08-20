@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN apt-get -y
+RUN apt-get update && apt-get -y install apache2
 CMD [“echo”,”Image created”]
 
 # FROM ubuntu:18.10
