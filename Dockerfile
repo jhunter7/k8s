@@ -1,14 +1,15 @@
-FROM ubuntu:18.10
-LABEL maintainer="egidio.docile@linuxconfig.org"
+FROM ubuntu:latest
+RUN apt-get -y install curl vim
+CMD [“echo”,”Image created”]
 
-RUN apt-get update && apt-get -y install apache2 curl vim
-EXPOSE 80
+# FROM ubuntu:18.10
+# LABEL maintainer="egidio.docile@linuxconfig.org"
 
-CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
+# RUN apt-get update && apt-get -y install apache2 curl vim
+# EXPOSE 80
+
+# CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 
 # # syntax=docker/dockerfile:1
    
-# FROM ubuntu:latest
-# RUN apt-get install –y curl vim
-# CMD [“echo”,”Image created”]
 
