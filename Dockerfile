@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN apt-get -y install curl vim
+RUN apt-get -y
 CMD [“echo”,”Image created”]
 
 # FROM ubuntu:18.10
